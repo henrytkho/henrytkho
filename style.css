@@ -1,12 +1,24 @@
+/*setting up for light/dark modes*/
+:root{
+    --color-bg:#0d1d5b;
+    --color-fg:#eee6cf;
+}
+
+@media (prefers-color-scheme: light){
+    :root {
+        --color-bg:#eee6cf;
+        --color-fg:#000000;
+    }
+}
+
 body{
-    background-color: darkblue;
+    background-color: var(--color-bg);
+    color: var(--color-fg)
 }
 
 h1{
-    color:white;
 }
 
 p{
-    color:white;
     font-family: Cambria;
 }
