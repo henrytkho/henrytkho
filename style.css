@@ -1,13 +1,13 @@
 /*setting up for light/dark modes*/
 :root{
-    --color-bg:#0d1d5b;
-    --color-fg:#eee6cf;
+    --color-bg:#132356;
+    --color-fg:#f2e89c;
 }
 
 @media (prefers-color-scheme: light){
     :root {
         --color-bg:#eee6cf;
-        --color-fg:#000000;
+        --color-fg:#132356;
     }
 }
 
