@@ -21,91 +21,115 @@ html,body{
 }
 
 div{
-    border: 2px solid var(--color-fg);
+    border: 0px solid var(--color-fg);
+}
+
+#container{
+    height:100%;
+    width:100%;
+    position: relative;
+
 }
 
 #header{
-    background-image:linear-gradient(to right,var(--color-fg) 40%, var(--color-bg) 60%);
+    background-image: linear-gradient(to right,var(--color-fg) 40%, var(--color-bg) 60%);
     background-size: 500% 100%;
-    background-position:100%;
-    transition:background-position 4s ease-out;
-    width:100%;
-    height:20%;
-    margin:left;
+    background-position: 100%;
+    transition: background-position 4s ease-out;
+    width: 100%;
+    height: 20%;
+    top:0;
+    position: absolute;
 }
 
 #header:hover{
-    background-position:0%;
+    background-position: 0%;
 }
 
 
 #meat{
-    width:100%;
-    height:70%;
-    margin:auto;
+    width: 100%;
+    height: 70%;
+    top:20vh;
+    margin: auto;
+    position: absolute;
 }
 
 #footer{
-    width:100%;
-    height:10%;
+    width: 100%;
+    height: 10%;
+    top:90vh;
+    position: absolute;
 }
 
 /*For loading page */
 .equalbars{
-    background-image:linear-gradient(to right,var(--color-fg) 40%, var(--color-bg) 60%);
+    background-image: linear-gradient(to right,var(--color-fg) 40%, var(--color-bg) 60%);
     background-size: 500% 100%;
-    background-position:100%;
-    transition:background-position 4s ease-out;
-    width:100%;
-    height:20%;
+    background-position: 100%;
+    transition: ackground-position 4s ease-out;
+    width: 100%;
+    height: 20%;
 }
 
 .equalbars:hover{
-    background-position:0%;
+    background-position: 0%;
 }
+/*end for loading page*/
 
 p{
     font-family: Cambria;
 }
 
 table{
-    position:relative;
-    margin:auto;
-    height:100%;
-    width:100%;
-    border:1px solid;
+    position: relative;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    border: 1px solid;
 }
    
 
 th,td{
-    border:1px solid #eee6cf;
-    height:50%;
-    width:50%;
-    text-align:center;
+    border: 1px solid #eee6cf;
+    height: 50%;
+    width: 50%;
+    text-align: center;
+}
+
+a{
+    text-decoration: inherit;
 }
 
 .buttonbig{
-    background-color:var(--color-bg);
-    border:none;
-    color:var(--color-fg);
+    background-color: var(--color-bg);
+    border: none;
+    color: var(--color-fg);
     padding: 20%;
     text-align: center;
-    display:inline-block;
+    display: inline-block;
     font-size: 36px;
     border-radius: 12px;
-    transition-duration:0.3s;
+    transition-duration: 0.3s;
+    user-select: none;
 }
 
 .buttonbig:hover{
-    background-color:#2b4cb9;
-    box-shadow: 0 0px 0px 
+    background-color: #2b4cb9;
+    box-shadow: 0 0px 0px;
 }
 
 .buttonbig:active{
-    background-color:#7e8fbd;
+    background-color: #7e8fbd;
     transition: 0.2s;
-    padding:15%;
+    padding: 15%;
     /*transform: translateY(0.5em);*/
 
+}
+
+.buttonbig a{
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 

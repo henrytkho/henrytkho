@@ -1,0 +1,11 @@
+.square{
+    height: 100px;
+    weight: 100px;
+    background-color: seagreen;
+}
+
+@media (orientation:portrait){
+    .square{
+        background-color: mintcream
+    }
+}
