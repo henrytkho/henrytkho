@@ -4,8 +4,8 @@
     background-color: seagreen;
 }
 
-@media (orientation:portrait){
+@media (orientation:landscape){
     .square{
-        background-color: mintcream
+        background-color: plum;
     }
 }
