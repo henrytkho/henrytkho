@@ -21,7 +21,7 @@ html,body{
 }
 
 div{
-    /* border: 2px solid var(--color-fg); */
+    border: 2px solid var(--color-fg);
 }
 
 #header{
