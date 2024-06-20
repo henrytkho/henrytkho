@@ -97,12 +97,12 @@ th,td{
 }
 
 .buttonbig:hover{
-    background-color:#7e8fbd;
+    background-color:#2b4cb9;
     box-shadow: 0 0px 0px 
 }
 
 .buttonbig:active{
-    background-color:#2b4cb9;
+    background-color:#7e8fbd;
     transition: 0.2s;
     padding:15%;
     /*transform: translateY(0.5em);*/
