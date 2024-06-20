@@ -67,7 +67,7 @@ div{
     background-image: linear-gradient(to right,var(--color-fg) 40%, var(--color-bg) 60%);
     background-size: 500% 100%;
     background-position: 100%;
-    transition: ackground-position 4s ease-out;
+    transition: background-position 4s ease-out;
     width: 100%;
     height: 20%;
 }
