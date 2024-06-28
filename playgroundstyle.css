@@ -9,3 +9,18 @@
         background-color: plum;
     }
 }
+
+/*For loading page */
+.equalbars{
+    background-image: linear-gradient(to right,var(--color-fg) 40%, var(--color-bg) 60%);
+    background-size: 500% 100%;
+    background-position: 100%;
+    transition: background-position 4s ease-out;
+    width: 100%;
+    height: 20%;
+}
+
+.equalbars:hover{
+    background-position: 0%;
+}
+/*end for loading page*/
