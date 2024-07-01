@@ -4,6 +4,14 @@
     background-color: seagreen;
 }
 
+.square:hover{
+    background-color:#F3B700;
+}
+
+.square:active{
+    background-color:#FE5D26;
+}
+
 @media (orientation:landscape){
     .square{
         background-color: plum;

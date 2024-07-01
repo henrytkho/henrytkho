@@ -1,146 +1,126 @@
-/*setting up for light/dark modes*/
+/*light/dark mode */
 :root{
-    --color-bg:#132356;
-    --color-fg:#eee6cf;
+    --color-bg: #02132E;
+    --color-fg: #E9F1F7;
 }
 
 @media (prefers-color-scheme: light){
-    :root {
-        --color-bg:#eee6cf;
-        --color-fg:#132356;
+    :root{
+        --color-bg: #E9F1F7;
+        --color-fg: #02132E;
     }
 }
 
 *{
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
 
 html,body{
     background-color: var(--color-bg);
     color: var(--color-fg);
-    height:100svh;
-    width: 100%;
-    font-size:large;
-    margin:0;
+    font-size: large;
     font-family: Trebuchet MS;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 500px;
+    min-height: 500px;
 }
 
 div{
     border: 2px solid var(--color-fg);
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
 
 #container{
-    height:100%;
-    width:100%;
+    width: 100%;
+    height: 100%;
     position: relative;
 }
 
-
 #header{
-    background-image: linear-gradient(to right,var(--color-fg) 40%, var(--color-bg) 60%);
-    background-size: 500% 100%;
-    background-position: 100%;
-    transition: background-position 4s ease-out;
     width: 100%;
-    height: 20%;
-    top:0;
-    /* position: absolute; */
+    height: 60px;
+    top: 0svh;
+    font-size: 30px;
 }
 
-#header:hover{
-    background-position: 0%;
-}
 
 
 #meat{
-    width:100%;
-    height: 70%;
-    top:20vh;
-    margin: auto;
-    /* position: absolute; */
+    width: 100%;
+    height: 100%;
 }
 
 #footer{
     width: 100%;
-    height: 10%;
-    
-    /* position:relative; */
+    height: 30px;
 }
-
 
 a{
     text-decoration: inherit;
 }
 
+/* ---- GRID ---- */
+#gridcontainer{
+    display:grid;
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(4,1fr);
+    height: 100%;
+    align-content: center;
+}
+
+.griditem{
+    grid-row: span 2; 
+    grid-column: span 2;
+    background-color:rgba(255, 228, 196,0.2);
+}
+
+/* .griditem2{
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.griditem3{
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.griditem4{
+    grid-row: span 2;
+    grid-column: span 2;
+} */
+
 .buttonbig{
-    background-color: var(--color-bg);
     border: none;
-    color: var(--color-fg);
-    padding: 7rem;
+    padding: 50%;
     text-align: center;
-    /* display: block; *//* in order for margin:auto to work the element has to be a block, not inlineblock */ 
-    /* margin: auto; */
     font-size: 36px;
-    border-radius: 12px;
-    transition-duration: 0.3s;
     user-select: none;
-    /* height:inherit; */
-    box-sizing:content-box;
 }
 
 .buttonbig:hover{
+    transition-duration: 0.4s;
     background-color: #2b4cb9;
-    box-shadow: 0 0px 0px;
 }
 
 .buttonbig:active{
+    transition-duration: 0.2s;
     background-color: #7e8fbd;
-    transition: 0.2s;
-    padding: 6rem;
-    /*transform: translateY(0.5em);*/
-
-}
-
-/* .buttonbig a{
-    display: block;
-    width: 100%;
-    height: 100%;
-} */
-
-
-/*flex items*/
-.flexbutton{
-    /* width: 45%; */
-    max-height:35vh;
-    display: block;
-    margin: auto;
-}
-
-#flexcontainer{
-    display: flex;
-    flex-wrap: wrap;
-    /* align-items: center; */
-    /* justify-content:center; */
-    width: 100%;
-    height: 100%;
-    /* max-height: 70vh; */
+    padding: 40%;
 }
 
 
-/* ARCHIVE */
-/* table{
-    position: relative;
-    margin: auto;
-    height: 100%;
-    width: 100%;
-    border: 1px solid;
-}
-   
 
-th,td{
-    border: 1px solid #eee6cf;
-    height: 50%;
-    width: 50%;
-    text-align: center;
-} */
+
+/* ---- fun toys ---- */
+.colorsweep{
+    background-image: linear-gradient(to right, var(--color-fg) 20%, var(--color-bg) 80%);
+    background-size: 600% 100%;
+    background-position: 100%;
+    transition: background-position ease-out .9s;
+}
+
+.colorsweep:hover{
+    background-position: 0%;
+}
