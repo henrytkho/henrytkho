@@ -28,7 +28,7 @@ html,body{
 }
 
 div{
-    border: 2px solid var(--color-fg); /*for testing*/
+    /* border: 2px solid var(--color-fg);*/ /*for testing */
     box-sizing: border-box;
 }
 
