@@ -76,22 +76,22 @@ a{
 .griditem1{
     grid-area: 1 / 1 / 3 / 3;
     background-color:rgba(255, 228, 196,0.2); /*for testing*/
-    height: 100%;
+    /* height: 100%; */
 }
 
 .griditem2{
     grid-area: 1 / 3 / 3 / 5;
-    height: 100%;
+    /* height: 100%; */
 }
 
 .griditem3{
     grid-area: 3 / 1 / 5 / 3;
-    height: 100%;
+    /* height: 100%; */
 }
 
 .griditem4{
     grid-area: 3 / 3 / 5 / 5;
-    height: 100%;
+    /* height: 100%; */
 }
 
 .buttonbig{
@@ -104,12 +104,13 @@ a{
     height: 100%;
     /* align-content: center; */
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
 }
 
 .buttonbig:hover{
     transition-duration: 0.4s;
     background-color: #2b4cb9;
+    animation: buttonshake .4s;
 }
 
 .buttonbig:active{
@@ -131,4 +132,20 @@ a{
 
 .colorsweep:hover{
     background-position: 0%;
+}
+
+@keyframes buttonshake{
+    0%{
+        transform: rotate(-4deg);
+    }
+    30%{
+        transform: rotate(7deg);
+    }
+    65%{
+        transform: rotate(-8deg);
+    }
+    100%{
+        transform: rotate(5deg);
+    }
+
 }
