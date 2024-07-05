@@ -106,6 +106,48 @@
   
 
 
+  /* MOVING PATH */
+  /* https://yqnn.github.io/svg-path-editor/ */
+.dot{
+  height: 10px;
+  width: 10px;
+  background-color: #FE5D26;
+  position: relative;
+  margin: auto;
+}
+
+
+.dotparent{
+  height: 5px;
+}
+
+.dotcontainer{
+  height: 10000%;
+  width: 60px;
+  margin-left: 100px;
+  border: solid 2px;
+  display: flex;
+  align-content: center;
+}
+
+.dotanimation:hover{
+  /* offset-path: path('M 0 0 A 1 1 0 0 0 -90 0 V 300'); */
+  offset-path: path('M 30 50 A 1 1 0 0 0 -90 0 V 300');
+  animation: curlandexpand 4s infinite ease-in;
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+}
+
+
+@keyframes curlandexpand{
+  0%{
+    offset-distance: 0%;
+  }
+  100%{
+    offset-distance: 100%;
+  }
+}
 
 
 
